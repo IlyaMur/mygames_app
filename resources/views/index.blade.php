@@ -7,142 +7,32 @@
         </h2>
         <div
             class="popular-games text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-12 border-b border-gray-800 pb-16">
-            <div class="game mt-6">
-                <div class="relative inline-block">
-                    <a href="#">
-                        <img src="/img/game.jpg" alt="game cover"
-                            class="hover:opacity-75 transition ease-in-out duration-150">
+
+            @foreach ($popularGames as $game)
+                <div class="game mt-6">
+                    <div class="relative inline-block">
+                        <a href="#">
+                            <img src="{{ Str::replaceFirst('thumb', 'cover_big', $game['cover']['url']) }}"
+                                alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
+                        </a>
+                        @if (isset($game['rating']))
+                            <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full"
+                                style="right:-20px; bottom: -20px">
+                                <div class="font-semibold text-xs flex justify-center items-center h-full">
+                                    {{ round($game['rating']) . '%' }}
+                                </div>
+                            </div>
+                        @endif
+                    </div>
+
+                    <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">
+                        {{ $game['name'] }}
                     </a>
-                    <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full"
-                        style="right:-20px; bottom: -20px">
-                        <div class="font-semibold text-xs flex justify-center items-center h-full">
-                            80%
-                        </div>
+                    <div class="text-gray-400 mt-1">
+                        {{ implode(', ', array_column($game['platforms'], 'abbreviation')) }}
                     </div>
                 </div>
-
-                <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Duck Nuckem 3D</a>
-                <div class="text-gray-400 mt-1">Playstation 4</div>
-            </div>
-            <div class="game mt-6">
-                <div class="relative inline-block">
-                    <a href="#">
-                        <img src="/img/game.jpg" alt="game cover"
-                            class="hover:opacity-75 transition ease-in-out duration-150">
-                    </a>
-                    <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full"
-                        style="right:-20px; bottom: -20px">
-                        <div class="font-semibold text-xs flex justify-center items-center h-full">
-                            80%
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Duck Nuckem 3D</a>
-                <div class="text-gray-400 mt-1">Playstation 4</div>
-            </div>
-            <div class="game mt-6">
-                <div class="relative inline-block">
-                    <a href="#">
-                        <img src="/img/game.jpg" alt="game cover"
-                            class="hover:opacity-75 transition ease-in-out duration-150">
-                    </a>
-                    <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full"
-                        style="right:-20px; bottom: -20px">
-                        <div class="font-semibold text-xs flex justify-center items-center h-full">
-                            80%
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Duck Nuckem 3D</a>
-                <div class="text-gray-400 mt-1">Playstation 4</div>
-            </div>
-            <div class="game mt-6">
-                <div class="relative inline-block">
-                    <a href="#">
-                        <img src="/img/game.jpg" alt="game cover"
-                            class="hover:opacity-75 transition ease-in-out duration-150">
-                    </a>
-                    <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full"
-                        style="right:-20px; bottom: -20px">
-                        <div class="font-semibold text-xs flex justify-center items-center h-full">
-                            80%
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Duck Nuckem 3D</a>
-                <div class="text-gray-400 mt-1">Playstation 4</div>
-            </div>
-            <div class="game mt-6">
-                <div class="relative inline-block">
-                    <a href="#">
-                        <img src="/img/game.jpg" alt="game cover"
-                            class="hover:opacity-75 transition ease-in-out duration-150">
-                    </a>
-                    <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full"
-                        style="right:-20px; bottom: -20px">
-                        <div class="font-semibold text-xs flex justify-center items-center h-full">
-                            80%
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Duck Nuckem 3D</a>
-                <div class="text-gray-400 mt-1">Playstation 4</div>
-            </div>
-            <div class="game mt-6">
-                <div class="relative inline-block">
-                    <a href="#">
-                        <img src="/img/game.jpg" alt="game cover"
-                            class="hover:opacity-75 transition ease-in-out duration-150">
-                    </a>
-                    <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full"
-                        style="right:-20px; bottom: -20px">
-                        <div class="font-semibold text-xs flex justify-center items-center h-full">
-                            80%
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Duck Nuckem 3D</a>
-                <div class="text-gray-400 mt-1">Playstation 4</div>
-            </div>
-            <div class="game mt-6">
-                <div class="relative inline-block">
-                    <a href="#">
-                        <img src="/img/game.jpg" alt="game cover"
-                            class="hover:opacity-75 transition ease-in-out duration-150">
-                    </a>
-                    <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full"
-                        style="right:-20px; bottom: -20px">
-                        <div class="font-semibold text-xs flex justify-center items-center h-full">
-                            80%
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Duck Nuckem 3D</a>
-                <div class="text-gray-400 mt-1">Playstation 4</div>
-            </div>
-            <div class="game mt-6">
-                <div class="relative inline-block">
-                    <a href="#">
-                        <img src="/img/game.jpg" alt="game cover"
-                            class="hover:opacity-75 transition ease-in-out duration-150">
-                    </a>
-                    <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full"
-                        style="right:-20px; bottom: -20px">
-                        <div class="font-semibold text-xs flex justify-center items-center h-full">
-                            80%
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Duck Nuckem 3D</a>
-                <div class="text-gray-400 mt-1">Playstation 4</div>
-            </div>
+            @endforeach
         </div>
 
         <div class="flex flex-col lg:flex-row my-10">
@@ -151,106 +41,31 @@
                     Recently Reviewed
                 </h2>
                 <div class="recently-reviewed-container space-y-12 mt-8">
-                    <div class="game bg-gray-800 rounded-lg shadow-md flex px-6 py-6">
-                        <div class="relative flex-none">
-                            <a href="#">
-                                <img src="/img/game.jpg" alt="game cover"
-                                    class="w-48 hover:opacity-75 transition ease-in-out duration-150">
-                            </a>
-                            <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-900 rounded-full"
-                                style="right:-20px; bottom: -20px">
-                                <div class="font-semibold text-xs flex justify-center items-center h-full">
-                                    80%
-                                </div>
+                    @foreach ($recentlyReviewed as $game)
+                        <div class="game bg-gray-800 rounded-lg shadow-md flex px-6 py-6">
+                            <div class="relative flex-none">
+                                <a href="#">
+                                    <img src="{{ Str::replaceFirst('thumb', 'cover_big', $game['cover']['url']) }}"
+                                        alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
+                                </a>
+                                @if (isset($game['rating']))
+                                    <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-900 rounded-full"
+                                        style="right:-20px; bottom: -20px">
+                                        <div class="font-semibold text-xs flex justify-center items-center h-full">
+                                            {{ round($game['rating']) . '%' }}
+                                        </div>
+                                    </div>
+                                @endif
+                            </div>
+                            <div class="ml-12">
+                                <a href="#" class="block text-lg font-semibold leading-tight hover:text-gray-400 mt-4">
+                                    {{ $game['name'] }}</a>
+                                <div class="text-gray-400 mt-1">
+                                    {{ implode(', ', array_column($game['platforms'], 'abbreviation')) }}</div>
+                                <p class="mt-6 text-gray-400 hidden lg:block">{{ $game['summary'] }}</p>
                             </div>
                         </div>
-                        <div class="ml-12">
-                            <a href="#" class="block text-lg font-semibold leading-tight hover:text-gray-400 mt-4">Duck
-                                Nuckem 3D</a>
-                            <div class="text-gray-400 mt-1">Playstation 4</div>
-                            <p class="mt-6 text-gray-400 hidden lg:block">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat unde est itaque veniam
-                                eius facilis magnam sed, excepturi, expedita quod dolore minus quis officiis. Tempora rem
-                                minus aperiam a perspiciatis magnam quam odit facilis, quod, natus autem eligendi fugiat
-                                voluptate?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="game bg-gray-800 rounded-lg shadow-md flex px-6 py-6">
-                        <div class="relative flex-none">
-                            <a href="#">
-                                <img src="/img/game.jpg" alt="game cover"
-                                    class="w-48 hover:opacity-75 transition ease-in-out duration-150">
-                            </a>
-                            <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-900 rounded-full"
-                                style="right:-20px; bottom: -20px">
-                                <div class="font-semibold text-xs flex justify-center items-center h-full">
-                                    80%
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ml-12">
-                            <a href="#" class="block text-lg font-semibold leading-tight hover:text-gray-400 mt-4">Duck
-                                Nuckem 3D</a>
-                            <div class="text-gray-400 mt-1">Playstation 4</div>
-                            <p class="mt-6 text-gray-400 hidden lg:block">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat unde est itaque veniam
-                                eius facilis magnam sed, excepturi, expedita quod dolore minus quis officiis. Tempora rem
-                                minus aperiam a perspiciatis magnam quam odit facilis, quod, natus autem eligendi fugiat
-                                voluptate?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="game bg-gray-800 rounded-lg shadow-md flex px-6 py-6">
-                        <div class="relative flex-none">
-                            <a href="#">
-                                <img src="/img/game.jpg" alt="game cover"
-                                    class="w-48 hover:opacity-75 transition ease-in-out duration-150">
-                            </a>
-                            <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-900 rounded-full"
-                                style="right:-20px; bottom: -20px">
-                                <div class="font-semibold text-xs flex justify-center items-center h-full">
-                                    80%
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ml-12">
-                            <a href="#" class="block text-lg font-semibold leading-tight hover:text-gray-400 mt-4">Duck
-                                Nuckem 3D</a>
-                            <div class="text-gray-400 mt-1">Playstation 4</div>
-                            <p class="mt-6 text-gray-400 hidden lg:block">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat unde est itaque veniam
-                                eius facilis magnam sed, excepturi, expedita quod dolore minus quis officiis. Tempora rem
-                                minus aperiam a perspiciatis magnam quam odit facilis, quod, natus autem eligendi fugiat
-                                voluptate?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="game bg-gray-800 rounded-lg shadow-md flex px-6 py-6">
-                        <div class="relative flex-none">
-                            <a href="#">
-                                <img src="/img/game.jpg" alt="game cover"
-                                    class="w-48 hover:opacity-75 transition ease-in-out duration-150">
-                            </a>
-                            <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-900 rounded-full"
-                                style="right:-20px; bottom: -20px">
-                                <div class="font-semibold text-xs flex justify-center items-center h-full">
-                                    80%
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ml-12">
-                            <a href="#" class="block text-lg font-semibold leading-tight hover:text-gray-400 mt-4">Duck
-                                Nuckem 3D</a>
-                            <div class="text-gray-400 mt-1">Playstation 4</div>
-                            <p class="mt-6 text-gray-400 hidden lg:block">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat unde est itaque veniam
-                                eius facilis magnam sed, excepturi, expedita quod dolore minus quis officiis. Tempora rem
-                                minus aperiam a perspiciatis magnam quam odit facilis, quod, natus autem eligendi fugiat
-                                voluptate?
-                            </p>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
 
             </div>
@@ -259,105 +74,36 @@
                     Most Anticipated
                 </h2>
                 <div class="most-anticipated-container space-y-10 mt-8">
-                    <div class="game flex">
-                        <a href="#">
-                            <img src="/img/game.jpg" alt="game cover"
-                                class="w-16 hover:opacity-75 transition ease-in-out duration-150">
-                        </a>
-                        <div class="ml-4">
-                            <a href="#" class="hover:text-gray-300">Cyberpunk 2077</a>
-                            <div class="text-gray-400 text-sm mt-1">
-                                Sept 16, 2020
+                    @foreach ($mostAnticipated as $game)
+                        <div class="game flex">
+                            <a href="#">
+                                <img src="{{ Str::replaceFirst('thumb', 'cover_small', $game['cover']['url']) }}">
+                            </a>
+                            <div class="ml-4">
+                                <a href="#" class="hover:text-gray-300">{{ $game['name'] }}</a>
+                                <div class="text-gray-400 text-sm mt-1">
+                                    {{ Carbon\Carbon::parse($game['first_release_date'])->format('M d, Y') }}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="game flex">
-                        <a href="#">
-                            <img src="/img/game.jpg" alt="game cover"
-                                class="w-16 hover:opacity-75 transition ease-in-out duration-150">
-                        </a>
-                        <div class="ml-4">
-                            <a href="#" class="hover:text-gray-300">Cyberpunk 2077</a>
-                            <div class="text-gray-400 text-sm mt-1">
-                                Sept 16, 2020
-                            </div>
-                        </div>
-                    </div>
-                    <div class="game flex">
-                        <a href="#">
-                            <img src="/img/game.jpg" alt="game cover"
-                                class="w-16 hover:opacity-75 transition ease-in-out duration-150">
-                        </a>
-                        <div class="ml-4">
-                            <a href="#" class="hover:text-gray-300">Cyberpunk 2077</a>
-                            <div class="text-gray-400 text-sm mt-1">
-                                Sept 16, 2020
-                            </div>
-                        </div>
-                    </div>
-                    <div class="game flex">
-                        <a href="#">
-                            <img src="/img/game.jpg" alt="game cover"
-                                class="w-16 hover:opacity-75 transition ease-in-out duration-150">
-                        </a>
-                        <div class="ml-4">
-                            <a href="#" class="hover:text-gray-300">Cyberpunk 2077</a>
-                            <div class="text-gray-400 text-sm mt-1">
-                                Sept 16, 2020
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                     <h2 class="text-blue-500 uppercase tracking-wide font-semibold">
                         Coming Soon
                     </h2>
-                    <div class="game flex">
-                        <a href="#">
-                            <img src="/img/game.jpg" alt="game cover"
-                                class="w-16 hover:opacity-75 transition ease-in-out duration-150">
-                        </a>
-                        <div class="ml-4">
-                            <a href="#" class="hover:text-gray-300">Cyberpunk 2077</a>
-                            <div class="text-gray-400 text-sm mt-1">
-                                Sept 16, 2020
+
+                    @foreach ($comingSoon as $game)
+                        <div class="game flex">
+                            <a href="#">
+                                <img src="{{ Str::replaceFirst('thumb', 'cover_small', $game['cover']['url']) }}">
+                            </a>
+                            <div class="ml-4">
+                                <a href="#" class="hover:text-gray-300"> {{ $game['name'] }}</a>
+                                <div class="text-gray-400 text-sm mt-1">
+                                    {{ Carbon\Carbon::parse($game['first_release_date'])->format('M d, Y') }}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="game flex">
-                        <a href="#">
-                            <img src="/img/game.jpg" alt="game cover"
-                                class="w-16 hover:opacity-75 transition ease-in-out duration-150">
-                        </a>
-                        <div class="ml-4">
-                            <a href="#" class="hover:text-gray-300">Cyberpunk 2077</a>
-                            <div class="text-gray-400 text-sm mt-1">
-                                Sept 16, 2020
-                            </div>
-                        </div>
-                    </div>
-                    <div class="game flex">
-                        <a href="#">
-                            <img src="/img/game.jpg" alt="game cover"
-                                class="w-16 hover:opacity-75 transition ease-in-out duration-150">
-                        </a>
-                        <div class="ml-4">
-                            <a href="#" class="hover:text-gray-300">Cyberpunk 2077</a>
-                            <div class="text-gray-400 text-sm mt-1">
-                                Sept 16, 2020
-                            </div>
-                        </div>
-                    </div>
-                    <div class="game flex">
-                        <a href="#">
-                            <img src="/img/game.jpg" alt="game cover"
-                                class="w-16 hover:opacity-75 transition ease-in-out duration-150">
-                        </a>
-                        <div class="ml-4">
-                            <a href="#" class="hover:text-gray-300">Cyberpunk 2077</a>
-                            <div class="text-gray-400 text-sm mt-1">
-                                Sept 16, 2020
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
