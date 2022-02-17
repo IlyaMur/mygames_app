@@ -1104,6 +1104,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 0px;
   }
 
+  .sm\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
+  .sm\:ml-4 {
+    margin-left: 1rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -1148,8 +1156,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 768px) {
 
+  .md\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:border-t-0 {
@@ -1175,6 +1195,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 4rem;
   }
 
+  .lg\:ml-12 {
+    margin-left: 3rem;
+  }
+
+  .lg\:mr-64 {
+    margin-right: 16rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1189,6 +1217,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
