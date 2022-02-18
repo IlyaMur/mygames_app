@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
     <title>Video Games</title>
+    <livewire:styles />
 </head>
 
 <body class=" bg-gray-900 text-white">
@@ -56,6 +57,7 @@
             Powered By <a href="#" class="underline hover:text-gray-400">IGDB API</a>
         </div>
     </footer>
+    <livewire:scripts />
 </body>
 
 </html>

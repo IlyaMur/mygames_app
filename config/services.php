@@ -35,6 +35,7 @@ return [
             'Authorization' => env('GAME_API_SECRET'),
             'Client-Id' => env('GAME_API_ID')
         ],
-        'url' => 'https://api.igdb.com/v4/games'
+        'url' => 'https://api.igdb.com/v4/games',
+        'urlMultiQuery' => 'https://api.igdb.com/v4/multiquery',
     ],
 ];
