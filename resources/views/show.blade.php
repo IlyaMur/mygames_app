@@ -4,9 +4,9 @@
     <div class="container mx-auto px-4">
         <div class="game-details border-b border-gray-800 pb-12 flex flex-col lg:flex-row">
             <div class="flex-none">
-                @if(isset($game['cover']))
-                <img src="{{ Str::replaceFirst('thumb', 'cover_big', $game['cover']['url']) }}" alt="game cover"
-                    class="hover:opacity-75 transition ease-in-out duration-150">
+                @if (array_key_exists('cover', $game))
+                    <img src="{{ Str::replaceFirst('thumb', 'cover_big', $game['cover']['url']) }}" alt="game cover"
+                        class="hover:opacity-75 transition ease-in-out duration-150">
                 @endif
             </div>
             <div class="lg:ml-12 lg:mr-64">
