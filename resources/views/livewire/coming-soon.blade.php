@@ -2,12 +2,13 @@
     @forelse ($comingSoon as $game)
         <div class="game flex">
             <a href="#">
-                <img src="{{ Str::replaceFirst('thumb', 'cover_small', $game['cover']['url']) }}">
+                <img class="w-16 hover:opacity-75 transition ease-in-out duration-150 rounded-lg"
+                    src="{{ $game->cover_image_url }}">
             </a>
             <div class="ml-4">
-                <a href="#" class="hover:text-gray-300"> {{ $game['name'] }}</a>
+                <a href="#" class="hover:text-gray-300"> {{ $game->name }}</a>
                 <div class="text-gray-400 text-sm mt-1">
-                    {{ Carbon\Carbon::parse($game['first_release_date'])->format('M d, Y') }}
+                    {{ !empty($game->first_release_date) ? $game->first_release_date->format('Y, M d') : 'Not defined' }}
                 </div>
             </div>
         </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Carbon\Carbon;
+use App\Data\GameData;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Http;
@@ -61,8 +62,10 @@ class GamesController extends Controller
 
         abort_if(!$game, 404);
 
+        $game = GameData::fromApi($game[0]);
+
         return view('show', [
-            'game' => $game[0]
+            'game' => $game
         ]);
     }
 

@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use Illuminate\Support\Carbon;
+use App\Data\GameDataCollection;
 use Illuminate\Support\Facades\Http;
 
 class MostAnticipated extends Component
@@ -12,7 +13,7 @@ class MostAnticipated extends Component
 
     public function loadMostAnticipated()
     {
-        $this->mostAnticipated = cache()->remember('most-anticipated', 7, function () {
+        $mostAnticipated = cache()->remember('most-anticipated', 7, function () {
             return Http::withHeaders(config('services.igdb.keys'))->withBody(
                 "
                 fields name, cover.url, first_release_date, total_rating_count, platforms.abbreviation, rating, rating_count, summary, slug;
@@ -25,6 +26,8 @@ class MostAnticipated extends Component
                 'text/plain'
             )->post(config('services.igdb.url'))->json();
         });
+
+        $this->mostAnticipated = GameDataCollection::create($mostAnticipated);
     }
 
     public function render()

@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Data\GameDataCollection;
 use Livewire\Component;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Http;
@@ -12,7 +13,7 @@ class ComingSoon extends Component
     
     public function loadComingSoon()
     {
-        $this->comingSoon = cache()->remember('coming-soon', 7, function () {
+        $comingSoon = cache()->remember('coming-soon', 7, function () {
             return Http::withHeaders(config('services.igdb.keys'))->withBody(
                 "
                 fields name, cover.url, first_release_date, platforms.abbreviation, rating, rating_count, summary, slug;
@@ -24,6 +25,8 @@ class ComingSoon extends Component
                 'text/plain'
             )->post(config('services.igdb.url'))->json();
         });
+
+        $this->comingSoon = GameDataCollection::create($comingSoon);
     }
 
     public function render()

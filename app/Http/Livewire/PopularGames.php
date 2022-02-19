@@ -3,8 +3,6 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use Illuminate\Support\Str;
-use Illuminate\Support\Carbon;
 use App\Data\GameDataCollection;
 use Illuminate\Support\Facades\Http;
 

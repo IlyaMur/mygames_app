@@ -3,7 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use Illuminate\Support\Carbon;
+use App\Data\GameDataCollection;
 use Illuminate\Support\Facades\Http;
 
 class RecentlyReviewed extends Component
@@ -12,7 +12,7 @@ class RecentlyReviewed extends Component
 
     public function loadRecentlyReviewed()
     {
-        $this->recentlyReviewed = cache()->remember('recently-reviewed', 7, function () {
+        $recentlyReviewed = cache()->remember('recently-reviewed', 7, function () {
             return Http::withHeaders(config('services.igdb.keys'))->withBody(
                 "
                 fields name, cover.url, first_release_date, total_rating_count, platforms.abbreviation, rating, rating_count, summary, slug;
@@ -26,6 +26,8 @@ class RecentlyReviewed extends Component
                 'text/plain'
             )->post(config('services.igdb.url'))->json();
         });
+
+        $this->recentlyReviewed = GameDataCollection::create($recentlyReviewed);
     }
 
     public function render()
