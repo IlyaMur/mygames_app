@@ -19,7 +19,7 @@
                 <a href="#" class="block text-lg font-semibold leading-tight hover:text-gray-400 mt-4">
                     {{ $game['name'] }}</a>
                 <div class="text-gray-400 mt-1">
-                    {{ implode(', ', array_column($game['platforms'], 'abbreviation')) }}</div>
+                    {{ implode(', ', array_column($game['platforms'] ?? [], 'abbreviation')) }}</div>
                 <p class="mt-6 text-gray-400 hidden lg:block">{{ $game['summary'] }}</p>
             </div>
         </div>

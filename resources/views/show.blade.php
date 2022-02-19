@@ -17,7 +17,7 @@
                     <span> {{ $game['involved_companies'][0]['company']['name'] }}</span>
 
                     &middot;
-                    <span> {{ implode(', ', array_column($game['platforms'], 'abbreviation')) }}</span>
+                    <span> {{ implode(', ', array_column($game['platforms'] ?? [], 'abbreviation')) }}</span>
 
                 </div>
                 <div class="flex flex-wrap items-center mt-8">

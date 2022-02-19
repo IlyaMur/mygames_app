@@ -3,7 +3,9 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+use Illuminate\Support\Str;
 use Illuminate\Support\Carbon;
+use App\Data\GameDataCollection;
 use Illuminate\Support\Facades\Http;
 
 class PopularGames extends Component
@@ -12,7 +14,7 @@ class PopularGames extends Component
 
     public function loadPopularGames()
     {
-        $this->popularGames = cache()->remember('popular-games', 7, function () {
+        $popularGames = cache()->remember('popular-games', 7, function () {
             return Http::withHeaders(config('services.igdb.keys'))->withBody(
                 "
                     fields name, cover.url, first_release_date, total_rating_count, platforms.abbreviation, rating, slug;
@@ -25,6 +27,8 @@ class PopularGames extends Component
                 'text/plain'
             )->post(config('services.igdb.url'))->json();
         });
+
+        $this->popularGames = GameDataCollection::create($popularGames);
     }
 
     public function render()
