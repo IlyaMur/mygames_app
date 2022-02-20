@@ -335,5 +335,38 @@
         "rating": 81.0783826122205,
         "slug": "marvels-guardians-of-the-galaxy",
         "total_rating_count": 48
+    },
+    {
+        "id": 152249,
+        "cover": {
+            "id": 152562,
+            "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co39pu.jpg"
+        },
+        "first_release_date": 1635206400,
+        "name": "Zelda",
+        "platforms": [{
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            },
+            {
+                "id": 167,
+                "abbreviation": "PS5"
+            },
+            {
+                "id": 169,
+                "abbreviation": "Series X"
+            }
+        ],
+        "rating": 81.0783826122205,
+        "slug": "marvels-guardians-of-the-galaxy",
+        "total_rating_count": 48
     }
 ]

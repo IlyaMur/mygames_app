@@ -157,7 +157,7 @@ class GameData extends DataTransferObject
      */
     public static function fromApi(array $game): self
     {
-        $game['cover_image_url'] = isset($game['cover']) ? Str::replaceFirst('thumb', 'cover_big', $game['cover']['url']) : asset('images/sample-game-cover.png');
+        $game['cover_image_url'] = isset($game['cover']) ? Str::replaceFirst('thumb', 'cover_big', $game['cover']['url']) : asset('img/sample-game-cover.png');
         $game['genres'] = isset($game['genres']) ? implode(', ', collect($game['genres'])->pluck('name')->toArray()) : 'Multiple genres';
         $game['first_release_date'] = isset($game['first_release_date']) ? Carbon::parse($game['first_release_date']) : null;
         

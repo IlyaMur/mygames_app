@@ -135,14 +135,17 @@
                 Images
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
-                @foreach ($game->screenshots as $screenshot)
-                    <div>
-                        <a href="{{ $screenshot['huge'] }}">
-                            <img src="{{ $screenshot['big'] }}" alt="screenshot"
-                                class="hover:opacity-75 transition ease-in-out duration-150">
-                        </a>
-                    </div>
-                @endforeach
+                @isset($game->screenshots)
+                    @foreach ($game->screenshots as $screenshot)
+                        <div>
+                            <a href="{{ $screenshot['huge'] }}">
+                                <img src="{{ $screenshot['big'] }}" alt="screenshot"
+                                    class="hover:opacity-75 transition ease-in-out duration-150">
+                            </a>
+                        </div>
+                    @endforeach
+                @endisset
+
             </div>
         </div>
         <div class="images-container mt-8">

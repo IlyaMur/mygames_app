@@ -17,7 +17,7 @@ class PopularGameTest extends TestCase
         );
 
         Http::fake([
-            config('services.igdb.url') => $response
+            config('services.igdb.url') => Http::response($response)
         ]);
 
         Livewire::test(PopularGames::class)
@@ -25,8 +25,6 @@ class PopularGameTest extends TestCase
             ->call('loadPopularGames')
             ->assertSee('Fake Twelve Minutes')
             ->assertSee('PC')
-            ->assertSee('Kena: Bridge of Spirits')
-            ->assertSee(83)
-        ;
+            ->assertSee('Kena: Bridge of Spirits');
     }
 }

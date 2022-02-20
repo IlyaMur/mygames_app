@@ -18,7 +18,7 @@ class ComingSoonTest extends TestCase
         );
 
         Http::fake([
-            config('services.igdb.url') => $response
+            config('services.igdb.url') => Http::response($response)
         ]);
 
         Livewire::test(ComingSoon::class)
