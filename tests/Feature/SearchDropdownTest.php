@@ -25,6 +25,6 @@ class SearchDropdownTest extends TestCase
         Livewire::test(SearchDropdown::class)
             ->assertDontSee('Halo')
             ->set('search', 'Halo')
-            ->assertSee('Halo: Combat Evolved Anniversary');
+            ->assertSee('Halo');
     }
 }
