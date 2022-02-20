@@ -18,3 +18,9 @@
         @endforeach
     @endforelse
 </div>
+
+@push('scripts')
+    @include('partials._rating', [
+    'event' => 'gamesRatings'
+    ])
+@endpush

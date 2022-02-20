@@ -28,6 +28,12 @@ class RecentlyReviewed extends Component
         });
 
         $this->recentlyReviewed = GameDataCollection::create($recentlyReviewed);
+
+        collect($this->recentlyReviewed)
+            ->each(fn ($game) => $this->emit(
+                'reviewGamesRatings',
+                ['rating' => $game->rating / 100, 'slug' => "review_" . $game->slug]
+            ));
     }
 
     public function render()

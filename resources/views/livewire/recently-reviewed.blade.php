@@ -6,11 +6,9 @@
                     <img src="{{ $game->cover_image_url }}" alt="game cover"
                         class="hover:opacity-75 transition ease-in-out duration-150">
                 </a>
-                <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-900 rounded-full"
+                <div id="review_{{ $game->slug }}"
+                    class="absolute bottom-0 right-0 w-16 h-16 bg-gray-900 rounded-full text-xs"
                     style="right:-20px; bottom: -20px">
-                    <div class="font-semibold text-xs flex justify-center items-center h-full">
-                        {{ $game->rating . '%' }}
-                    </div>
                 </div>
             </div>
             <div class="ml-12">
@@ -50,4 +48,10 @@
             </div>
         @endforeach
     @endforelse
+
+    @push('scripts')
+        @include('partials._rating', [
+        'event' => 'reviewGamesRatings'
+        ])
+    @endpush
 </div>

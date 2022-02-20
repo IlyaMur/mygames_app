@@ -26,6 +26,12 @@ class PopularGames extends Component
         });
 
         $this->popularGames = GameDataCollection::create($popularGames);
+
+        collect($this->popularGames)
+            ->each(fn ($game) => $this->emit(
+                'gamesRatings',
+                ['rating' => $game->rating / 100, 'slug' => $game->slug]
+            ));
     }
 
     public function render()
