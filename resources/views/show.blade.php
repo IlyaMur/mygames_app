@@ -20,19 +20,27 @@
                 </div>
                 <div class="flex flex-wrap items-center mt-8">
                     <div class="flex items-center">
-                        <div class="w-16 h-16 bg-gray-800 rounded-full">
-                            <div class="font-semibold text-xs flex justify-center items-center h-full">
-                                {{ $game->rating . '%' }}
-                            </div>
+                        <div id="memberRating" class="w-16 h-16 bg-gray-800 rounded-full relative">
+                            @push('scripts')
+                                @include('partials/_rating', [
+                                'slug' => 'memberRating',
+                                'rating' => $game->rating,
+                                'event' => null
+                                ])
+                            @endpush
                         </div>
                         <div class="ml-4 text-xs">Member <br> Score</div>
                     </div>
 
                     <div class="flex items-center ml-12">
-                        <div class="w-16 h-16 bg-gray-800 rounded-full">
-                            <div class="font-semibold text-xs flex justify-center items-center h-full">
-                                {{ $game->aggregated_rating . '%' }}
-                            </div>
+                        <div id="aggregatedRating" class="w-16 h-16 bg-gray-800 rounded-full relative">
+                            @push('scripts')
+                                @include('partials/_rating', [
+                                'slug' => 'aggregatedRating',
+                                'rating' => $game->aggregated_rating,
+                                'event' => null
+                                ])
+                            @endpush
                         </div>
                         <div class="ml-4 text-xs">Critic <br> Score</div>
                     </div>
