@@ -1,0 +1,73 @@
+[{
+    "id": 103281,
+    "cover": {
+        "id": 111228,
+        "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co2dto.jpg"
+    },
+    "first_release_date": 1636934400,
+    "name": "Halo Infinite",
+    "platforms": [{
+        "id": 6,
+        "abbreviation": "PC"
+    }, {
+        "id": 49,
+        "abbreviation": "XONE"
+    }, {
+        "id": 169,
+        "abbreviation": "Series X"
+    }],
+    "rating": 85.4316332721491,
+    "rating_count": 63,
+    "slug": "halo-infinite",
+    "summary": "The Master Chief returns in Halo Infinite \u2013 the next chapter of the legendary franchise. When all hope is lost and humanity\u2019s fate hangs in the balance, the Master Chief is ready to confront the most ruthless foe he\u2019s ever faced. Step inside the armor of humanity\u2019s greatest hero to experience an epic adventure and explore the massive scale of the Halo ring.",
+    "total_rating_count": 74
+}, {
+    "id": 14741,
+    "cover": {
+        "id": 83821,
+        "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co1sod.jpg"
+    },
+    "first_release_date": 1629849600,
+    "name": "Psychonauts 2",
+    "platforms": [{
+        "id": 6,
+        "abbreviation": "PC"
+    }, {
+        "id": 48,
+        "abbreviation": "PS4"
+    }, {
+        "id": 49,
+        "abbreviation": "XONE"
+    }, {
+        "id": 169,
+        "abbreviation": "Series X"
+    }],
+    "rating": 90.06661610564001,
+    "rating_count": 60,
+    "slug": "psychonauts-2",
+    "summary": "Psychonauts 2 is a mind-bending trip through the strange worlds hiding inside our brains. Freshly-minted special agent and acrobat extraordinaire Razputin \u201cRaz\u201d Aquato returns to unpack emotional baggage and expand mental horizons. Along the way he\u2019ll help new friends, like this magical mote of light voiced (and sung) by Jack Black. Raz must use his powers to unravel dark mysteries about the Psychonauts team and his own family origins.",
+    "total_rating_count": 71
+}, {
+    "id": 141503,
+    "cover": {
+        "id": 171645,
+        "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co3ofx.jpg"
+    },
+    "first_release_date": 1636416000,
+    "name": "Forza Horizon 5",
+    "platforms": [{
+        "id": 6,
+        "abbreviation": "PC"
+    }, {
+        "id": 49,
+        "abbreviation": "XONE"
+    }, {
+        "id": 169,
+        "abbreviation": "Series X"
+    }],
+    "rating": 85.9476535821253,
+    "rating_count": 56,
+    "slug": "forza-horizon-5",
+    "summary": "Your Ultimate Horizon Adventure awaits! Explore the vibrant and ever-evolving open-world landscapes of Mexico with limitless, fun driving action in hundreds of the world\u2019s greatest cars.",
+    "total_rating_count": 68
+}]

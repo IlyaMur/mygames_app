@@ -1,0 +1,75 @@
+[{
+    "id": 132594,
+    "cover": {
+        "id": 113154,
+        "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co2fb6.jpg"
+    },
+    "first_release_date": 1645488000,
+    "name": "SCP: Pandemic",
+    "platforms": [{
+        "id": 6,
+        "abbreviation": "PC"
+    }],
+    "slug": "scp-pandemic",
+    "summary": "SCP: Pandemic is a hardcore 8-player cooperative first-person tactical shooter. You are a rogue fireteam going against the SCP Foundation and their attempt of global omnicide. You start at Area 12, the site where the Psi-Z program is being actualized."
+}, {
+    "id": 134831,
+    "cover": {
+        "id": 170857,
+        "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co3nu1.jpg"
+    },
+    "first_release_date": 1645488000,
+    "name": "Destiny 2: The Witch Queen",
+    "platforms": [{
+        "id": 6,
+        "abbreviation": "PC"
+    }, {
+        "id": 48,
+        "abbreviation": "PS4"
+    }, {
+        "id": 49,
+        "abbreviation": "XONE"
+    }, {
+        "id": 167,
+        "abbreviation": "PS5"
+    }, {
+        "id": 169,
+        "abbreviation": "Series X"
+    }],
+    "slug": "destiny-2-the-witch-queen",
+    "summary": "Delve into Savath\u00fbn\u2019s Throne World to uncover the mystery of how she and her Lucent Hive stole the Light. Learn the secrets to crafting new weapons, the new Glaive, and survive the truth within her web of lies."
+}, {
+    "id": 148382,
+    "cover": {
+        "id": 164903,
+        "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co3j8n.jpg"
+    },
+    "first_release_date": 1645488000,
+    "name": "Sol Cresta",
+    "platforms": [{
+        "id": 6,
+        "abbreviation": "PC"
+    }, {
+        "id": 48,
+        "abbreviation": "PS4"
+    }, {
+        "id": 130,
+        "abbreviation": "Switch"
+    }],
+    "slug": "sol-cresta",
+    "summary": "DOCK, SPLIT, and FORM UP!\nPilot three ships and free the solar system from the clutches of evil in this free-form shooting game!\n\nPlatinumGames\u2019 NEO-CLASSIC ARCADE series carries on the spirit and fun of classic gaming using modern technology, and the first project in this endeavor is Sol Cresta. Sol Cresta takes the docking and formation strategies of classic shooting games Moon Cresta and Terra Cresta and elevates them with the \u201cfree-form docking\u201d system. The flagship Yamato, composed of the ships Amaterasu, Tsukuyomi, and Susano can utilize various attacks depending on how the three ships are aligned. Docking, splitting, and reforming the ships as needed is the key to defeating the invading armies of Mandler."
+}, {
+    "id": 151942,
+    "cover": {
+        "id": 151431,
+        "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co38uf.jpg"
+    },
+    "first_release_date": 1645488000,
+    "name": "Mr. Rainer's Solve-It Service",
+    "platforms": [{
+        "id": 6,
+        "abbreviation": "PC"
+    }],
+    "slug": "mr-rainers-solve-it-service",
+    "summary": "\"In FLATSPACE, on HJ\u00d6, where HJ\u00d6RIANS live in DOMES in symbiosis with RAINCOATS...you'll find MR.RAINER'S SOLVE-IT SERVICE.\n\nYou've got a problem - we solve it.\"\n\nOne day, HEINO's partner dies. He gets a new one."
+}]

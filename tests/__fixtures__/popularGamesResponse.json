@@ -1,0 +1,339 @@
+[{
+        "id": 55163,
+        "cover": {
+            "id": 139602,
+            "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co2zpu.jpg"
+        },
+        "first_release_date": 1620345600,
+        "name": "Resident Evil Village",
+        "platforms": [{
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            },
+            {
+                "id": 167,
+                "abbreviation": "PS5"
+            },
+            {
+                "id": 169,
+                "abbreviation": "Series X"
+            },
+            {
+                "id": 170,
+                "abbreviation": "Stadia"
+            }
+        ],
+        "rating": 83.0894776026541,
+        "slug": "resident-evil-village",
+        "total_rating_count": 138
+    },
+    {
+        "id": 135243,
+        "cover": {
+            "id": 131227,
+            "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co2t97.jpg"
+        },
+        "first_release_date": 1616630400,
+        "name": "It Takes Two",
+        "platforms": [{
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            },
+            {
+                "id": 167,
+                "abbreviation": "PS5"
+            },
+            {
+                "id": 169,
+                "abbreviation": "Series X"
+            }
+        ],
+        "rating": 89.475720760522,
+        "slug": "it-takes-two",
+        "total_rating_count": 137
+    },
+    {
+        "id": 16612,
+        "cover": {
+            "id": 175141,
+            "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co3r51.jpg"
+        },
+        "first_release_date": 1629331200,
+        "name": "Fake Twelve Minutes",
+        "platforms": [{
+                "id": 6,
+                "abbreviation": "Fake PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            },
+            {
+                "id": 130,
+                "abbreviation": "Switch"
+            },
+            {
+                "id": 167,
+                "abbreviation": "PS5"
+            },
+            {
+                "id": 169,
+                "abbreviation": "Series X"
+            }
+        ],
+        "rating": 65.1910105812328,
+        "slug": "twelve-minutes",
+        "total_rating_count": 103
+    },
+    {
+        "id": 103281,
+        "cover": {
+            "id": 111228,
+            "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co2dto.jpg"
+        },
+        "first_release_date": 1636934400,
+        "name": "Halo Infinite",
+        "platforms": [{
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            },
+            {
+                "id": 169,
+                "abbreviation": "Series X"
+            }
+        ],
+        "rating": 85.4316332721491,
+        "slug": "halo-infinite",
+        "total_rating_count": 74
+    },
+    {
+        "id": 14741,
+        "cover": {
+            "id": 83821,
+            "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co1sod.jpg"
+        },
+        "first_release_date": 1629849600,
+        "name": "Psychonauts 2",
+        "platforms": [{
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            },
+            {
+                "id": 169,
+                "abbreviation": "Series X"
+            }
+        ],
+        "rating": 90.06661610564001,
+        "slug": "psychonauts-2",
+        "total_rating_count": 71
+    },
+    {
+        "id": 141503,
+        "cover": {
+            "id": 171645,
+            "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co3ofx.jpg"
+        },
+        "first_release_date": 1636416000,
+        "name": "Forza Horizon 5",
+        "platforms": [{
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            },
+            {
+                "id": 169,
+                "abbreviation": "Series X"
+            }
+        ],
+        "rating": 85.9476535821253,
+        "slug": "forza-horizon-5",
+        "total_rating_count": 68
+    },
+    {
+        "id": 134588,
+        "cover": {
+            "id": 105744,
+            "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co29lc.jpg"
+        },
+        "first_release_date": 1632182400,
+        "name": "Kena: Bridge of Spirits",
+        "platforms": [{
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 167,
+                "abbreviation": "PS5"
+            }
+        ],
+        "rating": 79.72393535813299,
+        "slug": "kena-bridge-of-spirits",
+        "total_rating_count": 64
+    },
+    {
+        "id": 15698,
+        "cover": {
+            "id": 152925,
+            "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co39zx.jpg"
+        },
+        "first_release_date": 1633564800,
+        "name": "Metroid Dread",
+        "platforms": [{
+            "id": 130,
+            "abbreviation": "Switch"
+        }],
+        "rating": 87.5155042488087,
+        "slug": "metroid-dread",
+        "total_rating_count": 61
+    },
+    {
+        "id": 131999,
+        "cover": {
+            "id": 115503,
+            "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co2h4f.jpg"
+        },
+        "first_release_date": 1619049600,
+        "name": "NieR Replicant ver.1.22474487139...",
+        "platforms": [{
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            }
+        ],
+        "rating": 84.3296361118982,
+        "slug": "nier-replicant-ver-dot-1-22474487139-dot-dot-dot",
+        "total_rating_count": 60
+    },
+    {
+        "id": 139090,
+        "cover": {
+            "id": 186672,
+            "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co401c.jpg"
+        },
+        "first_release_date": 1634601600,
+        "name": "Inscryption",
+        "platforms": [{
+            "id": 6,
+            "abbreviation": "PC"
+        }],
+        "rating": 90.7653154038205,
+        "slug": "inscryption",
+        "total_rating_count": 53
+    },
+    {
+        "id": 102058,
+        "cover": {
+            "id": 111627,
+            "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co2e4r.jpg"
+        },
+        "first_release_date": 1617235200,
+        "name": "Outriders",
+        "platforms": [{
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            },
+            {
+                "id": 167,
+                "abbreviation": "PS5"
+            },
+            {
+                "id": 169,
+                "abbreviation": "Series X"
+            },
+            {
+                "id": 170,
+                "abbreviation": "Stadia"
+            }
+        ],
+        "rating": 75.3000947977155,
+        "slug": "outriders",
+        "total_rating_count": 53
+    },
+    {
+        "id": 152249,
+        "cover": {
+            "id": 152562,
+            "url": "\/\/images.igdb.com\/igdb\/image\/upload\/t_thumb\/co39pu.jpg"
+        },
+        "first_release_date": 1635206400,
+        "name": "Marvel's Guardians of the Galaxy",
+        "platforms": [{
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            },
+            {
+                "id": 167,
+                "abbreviation": "PS5"
+            },
+            {
+                "id": 169,
+                "abbreviation": "Series X"
+            }
+        ],
+        "rating": 81.0783826122205,
+        "slug": "marvels-guardians-of-the-galaxy",
+        "total_rating_count": 48
+    }
+]

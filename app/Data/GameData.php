@@ -202,6 +202,6 @@ class GameData extends DataTransferObject
             ];
         }
         
-        return new static($game);
+        return new self($game);
     }
 }
