@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'asset_url' => 'https://mygames-info.herokuapp.com/',
+    'asset_url' => null,
 
     /*
     |--------------------------------------------------------------------------
