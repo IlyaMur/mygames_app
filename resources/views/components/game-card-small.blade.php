@@ -1,5 +1,5 @@
 <div class="game flex">
-    <a href="#">
+    <a href="{{ route('games.show', $game->slug) }}">
         <img class="w-16 hover:opacity-75 transition ease-in-out duration-150 rounded-lg"
             src="{{ $game->cover_image_url }}">
     </a>
