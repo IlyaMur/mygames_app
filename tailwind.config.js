@@ -1,4 +1,8 @@
 module.exports = {
+  purge: [
+    './app/**/*.php',
+    './resources/**/*.php',
+  ],
   content: [
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
