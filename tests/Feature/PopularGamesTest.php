@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Livewire\Livewire;
 
-class PopularGameTest extends TestCase
+class PopularGamesTest extends TestCase
 {
     public function testMainPageShowsPopularGames()
     {
